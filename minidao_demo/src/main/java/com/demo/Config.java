@@ -12,7 +12,7 @@ public class Config {
     public MiniDaoBeanScannerConfigurer miniDaoHandler() {
         MiniDaoBeanScannerConfigurer miniDaoHandler = new MiniDaoBeanScannerConfigurer();
         miniDaoHandler.setAnnotation(Repository.class);//使用的注解,默认是Minidao,推荐 Repository
-        miniDaoHandler.setBasePackage("com.jeecg.demo.dao,com.jeecg.demo,com.demo.users.dao");//dao地址,配置符合spring方式
+        miniDaoHandler.setBasePackage("com.demo.users.dao");//dao地址,配置符合spring方式
         miniDaoHandler.setDbType("mysql");//数据库类型  mysql/postgresql/oracle/sqlserver
         miniDaoHandler.setShowSql(false);//输出sql
         miniDaoHandler.setFormatSql(false);//格式化sql

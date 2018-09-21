@@ -1,6 +1,9 @@
 package com.demo.users.entity;
 
+import org.apache.commons.lang.builder.ToStringBuilder;
 import org.springframework.stereotype.Repository;
+
+import java.util.Date;
 
 public class Users {
 
@@ -11,6 +14,12 @@ public class Users {
     private String password;
 
     private String name;
+    private String userPhone;
+    private Integer age;
+    private Date createTime;
+    private Date modifyTime;
+
+
 
     public Integer getId() {
         return id;
@@ -44,14 +53,40 @@ public class Users {
         this.name = name;
     }
 
+    public String getUserPhone() {
+        return userPhone;
+    }
+
+    public void setUserPhone(String userPhone) {
+        this.userPhone = userPhone;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getModifyTime() {
+        return modifyTime;
+    }
+
+    public void setModifyTime(Date modifyTime) {
+        this.modifyTime = modifyTime;
+    }
 
     @Override
     public String toString() {
-        return "Users{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", name='" + name + '\'' +
-                '}';
+        return ToStringBuilder.reflectionToString(this);
     }
 }

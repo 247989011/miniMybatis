@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="freemarker_demo" />
         <module name="minidao_demo" />
+        <module name="test-minidao-starter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="freemarker_demo" target="1.8" />
       <module name="minidao_demo" target="1.8" />
+      <module name="test-minidao-starter" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
